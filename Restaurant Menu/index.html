@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <style>
+    body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #e67e22;
+            text-align: center;
+        }
+
+        article {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 250px;
+            padding: 10px;
+            margin: 10px auto; /* centraliza */
+            text-align: center;
+        }
+
+        article img {
+            width: 150px;
+        }
+
+        form {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 280px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="27017.jpg" id="header-img" alt="Bandeira do Brasil" width="200">
+    <h1>Taste of Brazil</h1>
+      <nav>
+         <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Place Your Order</a></li>
+         </ul>
+      </nav>
+  </header>
+  <main>
+      <section id="menu">
+      <h2>Menu</h2>
+      <article>
+        <img src="feijoada.png" alt="Feijoada">
+        <h3>Feijoada</h3>
+        <p>Made with black beans and pork. <i>US$22</i></p>
+      </article>
+     
+      <article>
+        <img src="escondidinho.png" alt="Ground Beef Escondidinho">
+        <h3>Ground Beef Escondidinho</h3>
+        <p>Mashed potatoes topped with seasoned ground beef and cheese. <i>US$18</i></p>
+      </article>
+      
+      <article>
+        <img src="açai.png" alt="Açai com Tapioca">
+        <h3>Amazonas Açai with Tapioca</h3>
+        <p>Fresh açaí from the Amazon served with tapioca. <i>US$15</i></p>
+      </article>
+      </section>
+     
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+      <form action="#" method="post">
+        <label for="name"> Your Name</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="feijoada">Feijoada</label>
+        <br>
+        <input type="number" id="feijoada" name="feijoada" min="0" value="0">
+        <br><br>
+        <label for="escondidinho">Ground Beef Escondidinho</label>
+        <br>
+        <input type="number" id="escondidinho" name="escondidinho" min="0" value="0">
+        <br><br>
+        <label for="acai">Amazonas Açai with Tapioca</label>
+        <br>
+        <input type="number" id="acai" name="acai" min="0" value="0">
+        <br><br>
+
+        <p>Sides/Add-ons</p>
+        <input type="checkbox" id="farofa" name="sides" value="Farofa">
+        <label for="farofa">Farofa</label>
+        <br><br>
+        <input type="checkbox" id="rice" name="sides" value="Rice">
+        <label for="rice">Rice</label>
+        <br><br>
+         
+        <label for="obs">Special Requests:</label>
+        <br><br>
+        <textarea id="obs" name="obs" cols="23" rows="3" placeholder="Example: More cheese on Escondidinho"></textarea>
+        <br><br>
+
+        <input type="submit" value="Go To Checkout">
+      </form>
+      </section>
+  <footer>
+    <p>Made with love by Luiza Rodrigues</p>
+  </footer>
+
+      
+  
+</body>
+</html>
